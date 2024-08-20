@@ -1,7 +1,300 @@
-.container{
-    width: 1140px;
+.container {
+    width: 1096px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
+}
+
+/* header */
+
+.header {
+    background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/bcg-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+.header-css {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 39px;
+    margin-bottom: 39px;
+    margin-right: 101px;
+}
+
+.nav-link-1 {
+    color: #94CFFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-list {
+    display: flex;
+    gap: 36px;
+}
+
+.nav-link {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.header-btn {
+    color: #26C6EA;
+    text-align: justify;
+    font-family: HeadlandOne;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #0B0E66;
+    border-color: #26C7EA;
+    border-radius: 45px 0;
+    padding: 8px 38px;
+    margin-left: 80px;
+}
+
+.header-link {
+    color: #FFF;
+    text-align: center;
+    font-family: "Hammersmith One";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header-list {
+    display: flex;
+    gap: 30px;
+}
+
+/* hero */
+
+.hero {
+    background-image: url(../img/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 740px;
+}
+
+.hero-text {
+    width: 240px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 227px;
+}
+
+.hero-txt {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero-btn {
+    width: 199px;
+    color: #26C7EA;
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 400;
+    border-radius: 35px 0px;
+    border: 2px solid #26C7EA;
+    background: #0B0E66;
+    margin-top: 42px;
+}
+
+.hero-list {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+/* stutata */
+
+.blc-txt {
+    color: #0A3853;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.blc-text {
+    color: #0A3853;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.blc-cite {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.stutata-img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* trailer */
+
+.trailer {
+    background-image: url(../img/trailer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 730px;
+}
+
+.trailer-btn {
+    color: #26C7EA;
+    text-align: justify;
+    font-family: HeadlandOne;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 45px 0px;
+    border: 3px solid #26C7EA;
+    background: #0B0E66;
+    padding: 15px 10px;
+    margin-top: 340px;
+    margin-bottom: 350px;
+    margin-left: 480px;
+}
+
+/* navi */
+
+.navi {
+    background-image: url(../img/navi-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.navi-title {
+    color: #141414;
+    text-align: justify;
+    font-family: HeadlandOne;
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+    margin-bottom: 45px;
+}
+
+.navi-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navi-item {
+    width: 320px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.70);
+}
+
+.navi-txt {
+    color: #141414;
+    text-align: justify;
+    font-family: HeadlandOne;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+
+.navi-img {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.navi-text {
+    color: #000;
+    text-align: justify;
+    font-family: HeadlandOne;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+
+.footer {
+    background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/bcg-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.footer-txt {
+    color: #FFF;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-line {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    color: #FFF;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-p {
+    color: #FFF;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 678px;
+    margin-top: 45px;
 }
