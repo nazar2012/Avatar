@@ -1,3 +1,13 @@
+:root{
+    --golovna-color:#94CFFF;
+    --main-color:#FFF;
+    --button-color: #26C7EA;
+    --added-color: #0A3853;
+    --cite-color: #000;
+    --main-two-color: #141414;
+    --bcg-btn: #0B0E66;
+}
+
 .container {
     width: 1096px;
     margin: 0 auto;
@@ -14,7 +24,7 @@
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--main-color);
 }
 
 .header-css {
@@ -30,7 +40,7 @@
 }
 
 .nav-link-1 {
-    color: #94CFFF;
+    color: var(--golovna-color);
     text-align: center;
     font-family: Inter;
     font-size: 20px;
@@ -43,7 +53,7 @@
 }
 
 .nav-link {
-    color: #FFF;
+    color: var(--main-color);
     text-align: center;
     font-family: Inter;
     font-size: 20px;
@@ -51,20 +61,20 @@
 }
 
 .header-btn {
-    color: #26C6EA;
+    color: var(--button-color);
     text-align: justify;
     font-family: HeadlandOne;
     font-size: 20px;
     font-weight: 400;
-    background-color: #0B0E66;
-    border-color: #26C7EA;
+    background-color: var(--bcg-btn);
+    border-color: var(--button-color);
     border-radius: 45px 0;
     padding: 8px 38px;
     margin-left: 80px;
 }
 
 .header-link {
-    color: #FFF;
+    color: var(--main-color);
     text-align: center;
     font-family: "Hammersmith One";
     font-size: 16px;
@@ -82,36 +92,43 @@
     background-image: url(../img/hero-img.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 740px;
+    padding-top: 180px;
+    padding-bottom: 179px;
+}
+
+.hero-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero-text {
     width: 240px;
-    color: #FFF;
+    color: var(--main-color);
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
-    padding-top: 227px;
 }
 
 .hero-txt {
-    color: #FFF;
+    color: var(--main-color);
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
 }
 
 .hero-btn {
-    width: 199px;
-    color: #26C7EA;
+    color: var(--button-color);
     text-align: center;
     font-family: Inter;
     font-size: 23px;
     font-weight: 400;
-    border-radius: 35px 0px;
-    border: 2px solid #26C7EA;
-    background: #0B0E66;
+    border-radius: 45px 0px;
+    border: 2px solid var(--button-color);
+    background: var(--bcg-btn);
     margin-top: 42px;
+    padding: 10px 30px;
+    width: 210px;
 }
 
 .hero-list {
@@ -125,7 +142,7 @@
 /* stutata */
 
 .blc-txt {
-    color: #0A3853;
+    color: var(--added-color);
     text-align: justify;
     font-family: Inter;
     font-size: 30px;
@@ -136,7 +153,7 @@
 }
 
 .blc-text {
-    color: #0A3853;
+    color: var(--added-color);
     text-align: justify;
     font-family: Inter;
     font-size: 30px;
@@ -148,7 +165,7 @@
 }
 
 .blc-cite {
-    color: #000;
+    color: var(--cite-color);
     text-align: center;
     font-family: Inter;
     font-size: 24px;
@@ -169,22 +186,21 @@
     background-image: url(../img/trailer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 730px;
+    padding-top: 330px;
+    padding-bottom: 331px;
+    text-align: center;
 }
 
 .trailer-btn {
-    color: #26C7EA;
+    color: var(--button-color);
     text-align: justify;
     font-family: HeadlandOne;
     font-size: 24px;
     font-weight: 400;
     border-radius: 45px 0px;
-    border: 3px solid #26C7EA;
-    background: #0B0E66;
-    padding: 15px 10px;
-    margin-top: 340px;
-    margin-bottom: 350px;
-    margin-left: 480px;
+    border: 3px solid var(--button-color);
+    background: var(--bcg-btn);
+    padding: 20px 20px;
 }
 
 /* navi */
@@ -193,36 +209,40 @@
     background-image: url(../img/navi-img.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    padding-top: 56px;
+    padding-bottom: 57px;
 }
 
 .navi-title {
-    color: #141414;
+    color: var(--main-two-color);
     text-align: justify;
     font-family: HeadlandOne;
     font-size: 32px;
     font-weight: 400;
     display: flex;
     justify-content: center;
-    padding-top: 58px;
     margin-bottom: 45px;
 }
 
 .navi-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
 }
 
 .navi-item {
     width: 320px;
-    height: 240px;
     background: rgba(255, 255, 255, 0.70);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 .navi-txt {
-    color: #141414;
+    color: var(--main-two-color);
     text-align: justify;
     font-family: HeadlandOne;
     font-size: 24px;
@@ -230,24 +250,19 @@
     line-height: 24px;
     display: flex;
     justify-content: center;
-    margin-top: 36px;
-    margin-bottom: 40px;
 }
 
 .navi-img {
     margin: 0 auto;
-    margin-bottom: 40px;
 }
 
 .navi-text {
-    color: #000;
+    color: var(--cite-color);
     text-align: justify;
     font-family: HeadlandOne;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
-    display: flex;
-    justify-content: center;
 }
 
 /* footer */
@@ -256,19 +271,49 @@
     background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/bcg-footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50px;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.footer-web {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.footer-div {
+    width: 2px;
+    height: 153px;
+    background: var(--main-color);
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-itm {
+    display: flex;
+    justify-content: end;
+    gap: 309px;
+    margin-top: 16px;
 }
 
 .footer-item {
     display: flex;
     justify-content: end;
-    gap: 15px;
+    gap: 234px;
+    margin-top: 16px;
+}
+
+.footer-list {
+    padding-top: 40px;
+    margin: 0 auto;
 }
 
 .footer-txt {
-    color: #FFF;
+    color: var(--main-color);
     text-align: justify;
     font-family: Inter;
     font-size: 20px;
@@ -276,13 +321,13 @@
 }
 
 .footer-line {
-    color: #FFF;
+    color: var(--main-color);
     display: flex;
     align-items: center;
 }
 
 .footer-text {
-    color: #FFF;
+    color: var(--main-color);
     text-align: justify;
     font-family: Inter;
     font-size: 20px;
@@ -290,11 +335,10 @@
 }
 
 .footer-p {
-    color: #FFF;
+    color: var(--main-color);
     text-align: justify;
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
-    margin-left: 678px;
-    margin-top: 45px;
+    margin-top: 37px;
 }
