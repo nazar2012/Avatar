@@ -141,6 +141,11 @@
 
 /* stutata */
 
+.stutata{
+    padding-top: 75px;
+    padding-bottom: 10px;
+}
+
 .blc-txt {
     color: var(--added-color);
     text-align: justify;
@@ -149,7 +154,6 @@
     font-weight: 400;
     display: flex;
     justify-content: center;
-    margin-top: 75px;
 }
 
 .blc-text {
@@ -177,7 +181,6 @@
 
 .stutata-img {
     margin: 0 auto;
-    margin-bottom: 10px;
 }
 
 /* trailer */
@@ -228,6 +231,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    flex-basis: calc();
 }
 
 .navi-item {
@@ -304,11 +308,9 @@
     display: flex;
     justify-content: end;
     gap: 234px;
-    margin-top: 16px;
 }
 
 .footer-list {
-    padding-top: 40px;
     margin: 0 auto;
 }
 
