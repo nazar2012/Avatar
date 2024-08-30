@@ -25,6 +25,8 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid var(--main-color);
+    padding-top: 39px;
+    padding-bottom: 39px;
 }
 
 .header-css {
@@ -34,8 +36,6 @@
 }
 
 .logo {
-    margin-top: 39px;
-    margin-bottom: 39px;
     margin-right: 101px;
 }
 
@@ -301,7 +301,6 @@
     display: flex;
     justify-content: end;
     gap: 309px;
-    margin-top: 16px;
 }
 
 .footer-item {
