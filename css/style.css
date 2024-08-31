@@ -32,11 +32,10 @@
 .header-css {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
-    margin-right: 101px;
+    margin-right: 168px;
 }
 
 .nav-link-1 {
@@ -49,7 +48,8 @@
 
 .nav-list {
     display: flex;
-    gap: 36px;
+    gap: 38px;
+    margin-right: 100px;
 }
 
 .nav-link {
@@ -70,7 +70,6 @@
     border-color: var(--button-color);
     border-radius: 45px 0;
     padding: 8px 38px;
-    margin-left: 80px;
 }
 
 .header-link {
@@ -84,6 +83,7 @@
 .header-list {
     display: flex;
     gap: 30px;
+    margin-left: 90px;
 }
 
 /* hero */
@@ -231,7 +231,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc();
+    justify-content: space-between;
 }
 
 .navi-item {
@@ -276,7 +276,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 
 .footer-web {
@@ -300,13 +300,12 @@
 .footer-itm {
     display: flex;
     justify-content: end;
-    gap: 309px;
+    margin-bottom: 16px;
 }
 
 .footer-item {
     display: flex;
     justify-content: end;
-    gap: 234px;
 }
 
 .footer-list {
