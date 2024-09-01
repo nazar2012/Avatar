@@ -19,7 +19,7 @@
 /* header */
 
 .header {
-    background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/bcg-header.png);
+    background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/bcg-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -89,7 +89,7 @@
 /* hero */
 
 .hero {
-    background-image: url(../img/hero-img.png);
+    background-image: url(../img/hero-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 180px;
@@ -186,7 +186,7 @@
 /* trailer */
 
 .trailer {
-    background-image: url(../img/trailer.png);
+    background-image: url(../img/trailer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 330px;
@@ -209,7 +209,7 @@
 /* navi */
 
 .navi {
-    background-image: url(../img/navi-img.png);
+    background-image: url(../img/navi-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 56px;
@@ -272,7 +272,7 @@
 /* footer */
 
 .footer {
-    background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/bcg-footer.png);
+    background-image: linear-gradient(rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url(../img/bcg-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 35px;
