@@ -1,6 +1,6 @@
-:root{
-    --golovna-color:#94CFFF;
-    --main-color:#FFF;
+:root {
+    --golovna-color: #94CFFF;
+    --main-color: #FFF;
     --button-color: #26C7EA;
     --added-color: #0A3853;
     --cite-color: #000;
@@ -141,7 +141,7 @@
 
 /* stutata */
 
-.stutata{
+.stutata {
     padding-top: 75px;
     padding-bottom: 10px;
 }
