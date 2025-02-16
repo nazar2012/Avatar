@@ -3,154 +3,279 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avatar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
-        integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&family=Inter&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./styles/main.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-css">
-            <a class="logo" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-            <nav class="header-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link-1" href="">Головна</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Про нас</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
-                </ul>
-            </nav>
-            <button class="header-btn" type="button">Увійти</button>
-            <ul class="header-list">
-                <li class="header-item"><a class="header-link" href="./pages/eng.html">ENG</a></li>
-                <li class="header-item"><a class="header-link" href="./index.html">UA</a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container hero-wrap">
-                <div class="hero-box">
-                    <h4 class="hero-text">Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn slu Na'viyä
-                        hapxì.
-                        Säwem nìayoeng!</h4>
-                    <img class="hero-img" src="./img/str-head.png" alt="strelka">
-                    <h4 class="hero-txt">Хоробрий воїне, звертаюсь до тебе!<br> Твій дух йде з Ейвою,<br> твоє тіло
-                        залишається,<br> щоб стати частиною Народу.<br> Борись разом з нами!</h4>
-                    <button class="hero-btn" type="button">Приєднатися до клану</button>
+    <main class="main-section">
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-section__column1" data-aos="fade-right" data-aos-duration="2000">
+                    <img srcset="./img/webps/main-logo-@1x.webp 1x, ./img/webps/main-logo-@2x.webp 2x"
+                        src="./img/main-logo.png" alt="Логотип" class="hero-section__logo" height="100">
+                    <p class="hero-section__text">Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn slu
+                        Na'viyä haì. Säwem nìayoeng!</p>
+                    <svg height="40" class="hero-section__arrow">
+                        <use href="./img/symbol-defs.svg#icon-arr"></use>
+                    </svg>
+                    <p class="hero-section__description">Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє
+                        тіло залишається, щоб стати частиною Народу. Борись разом з нами!</p>
+                    <button class="hero-section__but" data-open-form-modal>Приєднатися до клану</button>
                 </div>
-                <ul class="hero-list">
-                    <li class="list-item"><a class="item-link" target="_blank" href="https://www.instagram.com/"><img
-                                src="./img/inst 1.png" alt="inst"></a></li>
-                    <li class="list-item"><a class="item-link" target="_blank" href="https://x.com/?lang=ua"><img
-                                src="./img/twitter 1.png" alt="twitter"></a></li>
-                    <li class="list-item"><a class="item-link" target="_blank"
-                            href="https://www.youtube.com/?app=desktop&hl=ru"><img src="./img/youtube 1.png"
-                                alt="youtube"></a></li>
+                <div class="hero-section__column2" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="hero-section__switch">
+                        ENG
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        UA
+                    </div>
+                    <div class="hero-section__soc">
+                        <ul class="hero-section__list">
+                            <li class="hero-section__item">
+                                <a href="./" class="hero-section__link">
+                                    <svg height="30" width="30" class="hero-section__icon">
+                                        <use href="./img/symbol-defs.svg#icon-inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero-section__item">
+                                <a href="./" class="hero-section__link">
+                                    <svg height="30" width="30" class="hero-section__icon">
+                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero-section__item">
+                                <a href="./" class="hero-section__link">
+                                    <svg height="30" width="30" class="hero-section__icon">
+                                        <use href="./img/symbol-defs.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quote-section" data-aos="zoom-in-up" data-aos-duration="1300">
+            <h1 class="quote-section__title">
+                “БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ <br> ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”
+            </h1>
+            <p class="quote-section__text">Джейк Саллі</p>
+            <svg class="quote-section__img" height="120">
+                <use href="./img/symbol-defs.svg#icon-orel"></use>
+            </svg>
+        </section>
+        <section class="trailer-section">
+            <button class="trailer-section__but" data-aos="flip-up" data-aos-duration="600" data-open-modal>Дивитись
+                трейлер</button>
+        </section>
+        <section class="quote-section" data-aos="flip-left" data-aos-duration="1300">
+            <h1 class="quote-section__title">
+                “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ <br> ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”
+            </h1>
+            <p class="quote-section__text">Джейк Саллі</p>
+            <svg class="quote-section__img" height="120">
+                <use href="./img/symbol-defs.svg#icon-orel"></use>
+            </svg>
+        </section>
+        <section class="lang-section">
+            <div class="container">
+                <h2 class="lang-section__title" data-aos="fade-down" data-aos-duration="750">Вчимо мову На’ві</h2>
+                <ul class="lang-section__list">
+                    <li class="lang-section__item" data-aos="fade-left" data-aos-duration="1000">
+                        <p class="lang-section__text">Привіт</p>
+                        <svg height="40" class="lang-section__img">
+                            <use href="./img/symbol-defs.svg#icon-arr"></use>
+                        </svg>
+                        <p class="lang-section__explanation">Kaltxì</p>
+                    </li>
+                    <li class="lang-section__item" data-aos="zoom-in" data-aos-duration="1000">
+                        <p class="lang-section__text">Як справи?</p>
+                        <svg class="lang-section__img" height="40">
+                            <use href="./img/symbol-defs.svg#icon-orel"></use>
+                        </svg>
+                        <p class="lang-section__explanation">Ngaru lu fpom srak?</p>
+                    </li>
+                    <li class="lang-section__item" data-aos="fade-right" data-aos-duration="1000">
+                        <p class="lang-section__text">Все добре</p>
+                        <svg height="40" class="lang-section__img arr-right">
+                            <use href="./img/symbol-defs.svg#icon-arr"></use>
+                        </svg>
+                        <p class="lang-section__explanation">Lu fpom</p>
+                    </li>
+                    <li class="lang-section__item" data-aos="fade-left" data-aos-duration="1000">
+                        <p class="lang-section__text">Дякую</p>
+                        <svg height="40" class="lang-section__img">
+                            <use href="./img/symbol-defs.svg#icon-arr"></use>
+                        </svg>
+                        <p class="lang-section__explanation">Irayo si </p>
+                    </li>
+                    <li class="lang-section__item" data-aos="zoom-in" data-aos-duration="1000">
+                        <p class="lang-section__text">Я бачу тебе</p>
+                        <svg class="lang-section__img" height="40">
+                            <use href="./img/symbol-defs.svg#icon-orel"></use>
+                        </svg>
+                        <p class="lang-section__explanation">Oel ngati kameie</p>
+                    </li>
+                    <li class="lang-section__item" data-aos="fade-right" data-aos-duration="1000">
+                        <p class="lang-section__text">Слідуй за мною!</p>
+                        <svg height="40" class="lang-section__img arr-right">
+                            <use href="./img/symbol-defs.svg#icon-arr"></use>
+                        </svg>
+                        <p class="lang-section__explanation">Nong oet!</p>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section class="stutata">
-            <div class="container">
-                <blockquote class="stutata-blc">
-                    <p class="blc-txt">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ</p>
-                    <p class="blc-text">ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.” </p>
-                    <cite class="blc-cite">Джейк Саллі</cite>
-                </blockquote>
-                <img class="stutata-img" src="./img/orel.png" alt="orel">
-            </div>
+        <section class="quote-section" data-aos="flip-left" data-aos-duration="1300">
+            <h1 class="quote-section__title">
+                “НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ, <br> ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”
+            </h1>
+            <p class="quote-section__text">Нейтірі</p>
+            <svg class="quote-section__img" height="120">
+                <use href="./img/symbol-defs.svg#icon-orel"></use>
+            </svg>
         </section>
-        <section class="trailer">
-            <div class="container">
-                <button class="trailer-btn" type="button">Дивитись трейлер</button>
-            </div>
-        </section>
-        <section class="stutata">
-            <div class="container">
-                <blockquote class="stutata-blc">
-                    <p class="blc-txt">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</p>
-                    <p class="blc-text">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</p>
-                    <cite class="blc-cite">Джейк Саллі</cite>
-                </blockquote>
-                <img class="stutata-img" src="./img/orel.png" alt="orel">
-            </div>
-        </section>
-        <section class="navi">
-            <div class="container">
-                <h2 class="navi-title">Вчимо мову На’ві</h2>
-                <ul class="navi-list">
-                    <li class="navi-item">
-                        <h3 class="navi-txt">Привіт</h3>
-                        <img class="navi-img" src="./img/str-left.png" alt="left">
-                        <h3 class="navi-text">Kaltxì</h3>
-                    </li>
-                    <li class="navi-item">
-                        <h3 class="navi-txt">Як справи?</h3>
-                        <img class="navi-img" src="./img/orel-new.png" alt="orel">
-                        <h3 class="navi-text">Ngaru lu fpom srak?</h3>
-                    </li>
-                    <li class="navi-item">
-                        <h3 class="navi-txt">Все добре</h3>
-                        <img class="navi-img" src="./img/str-right.png" alt="right">
-                        <h3 class="navi-text">Lu fpom</h3>
-                    </li>
-                    <li class="navi-item">
-                        <h3 class="navi-txt">Дякую</h3>
-                        <img class="navi-img" src="./img/str-left.png" alt="left">
-                        <h3 class="navi-text">Irayo si </h3>
-                    </li>
-                    <li class="navi-item">
-                        <h3 class="navi-txt">Я бачу тебе</h3>
-                        <img class="navi-img" src="./img/orel-new.png" alt="orel">
-                        <h3 class="navi-text">Oel ngati kameie</h3>
-                    </li>
-                    <li class="navi-item">
-                        <h3 class="navi-txt">Слідуй за мною!</h3>
-                        <img class="navi-img" src="./img/str-right.png" alt="right">
-                        <h3 class="navi-text">Nong oet!</h3>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="stutata">
-            <div class="container">
-                <blockquote class="stutata-blc">
-                    <p class="blc-txt">“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,</p>
-                    <p class="blc-text">ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</p>
-                    <cite class="blc-cite">Нейтірі</cite>
-                </blockquote>
-                <img class="stutata-img" src="./img/orel.png" alt="orel">
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container footer-web">
-            <a class="footer-logo" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
-            <div class="footer-div"></div>
-            <div class="footer-box">
-                <ul class="footer-list">
-                    <li class="footer-itm">
-                        <p class="footer-txt">Q&A E-mail------------------------------------</p>
-                        <p class="footer-text">avatartwowqa@gmail.com</p>
-                    </li>
-                    <li class="footer-item">
-                        <p class="footer-txt">Cooperation E-mail-------------------------</p>
-                        <p class="footer-text">avatartwowcoop@gmail.com</p>
-                    </li>
-                </ul>
-                <p class="footer-p">&#xa9;2023 Avatar: The Way Of Water. All rights reserved</p>
-            </div>
+        <div class="overlay is-hidden" data-backdrop>
+            <section class="video-section">
+                <h2 class="video-section__title">Трейлер</h2>
+                <button class="video-section__close" type="button" data-close-modal>
+                    <svg class="video__svg" width="14" height="14">
+                        <use href="./img/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <iframe class="video-section__video" width="640" height="360"
+                    src="https://www.youtube.com/embed/CM79GTEm2ps" title="AVATAR Trailer (2009)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </section>
         </div>
-    </footer>
+        <div class="overlay-form is-hiddenForm" data-form-backdrop>
+            <form class="form">
+                <button type="button" class="form__close" data-close-form-modal>
+                    <svg class="form__svg" width="14" height="14">
+                        <use href="./img/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="form__field">
+                    <label for="Name" class="form__label">Ім'я</label>
+                    <input type="text" class="form__input" id="Name" required>
+                </div>
+                <div class="form__field">
+                    <label for="Name" class="form__label">Email</label>
+                    <input type="email" class="form__input" id="Email" required>
+                </div>
+                <button class="form__but" data-open-info-modal>Приєднатися до клану</button>
+            </form>
+        </div>
+        <div class="overlay-info is-hiddenInfo" data-info-backdrop>
+            <section class="info-modal">
+                <button type="button" class="info-modal__close" data-close-info-modal>
+                    <svg class="info-modal__svg" width="14" height="14">
+                        <use href="./img/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h2 class="info-modal__title">Вітаємо у нашому клані</h2>
+                <p class="info-modal__text">Твій Банші вже в дорозі. <br> Скоро побачимось на Пандорі.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer-section"></footer>
+    <script>
+        // інітим анімації
+        AOS.init();
+        // константи
+        const refs = {
+            openModalBtn: document.querySelector("[data-open-modal]"),
+            closeModalBtn: document.querySelector("[data-close-modal]"),
+            backdrop: document.querySelector("[data-backdrop]"),
+        };
+        const refsForm = {
+            openModalBtnForm: document.querySelector("[data-open-form-modal]"),
+            closeModalBtnForm: document.querySelector("[data-close-form-modal]"),
+            backdropForm: document.querySelector("[data-form-backdrop]"),
+        };
+        const refsInfo = {
+            openModalBtnInfo: document.querySelector("[data-open-info-modal]"),
+            closeModalBtnInfo: document.querySelector("[data-close-info-modal]"),
+            backdropInfo: document.querySelector("[data-info-backdrop]"),
+        };
+
+        // код для відео модалки
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        refs.backdrop.addEventListener("click", logBackdropClick);
+
+        function toggleModal() {
+            refs.backdrop.classList.toggle("is-hidden");
+
+            if (document.body.style.overflow == 'hidden') {
+                document.body.style.overflow = 'visible';
+            }
+            else {
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function logBackdropClick() {
+            console.log("Це клік в бекдроп");
+        }
+
+        // код для форми модалки
+        refsForm.openModalBtnForm.addEventListener("click", toggleModalForm);
+        refsForm.closeModalBtnForm.addEventListener("click", toggleModalForm);
+
+        refsForm.backdropForm.addEventListener("click", logBackdropClickForm);
+
+        function toggleModalForm() {
+            refsForm.backdropForm.classList.toggle("is-hiddenForm");
+
+            if (document.body.style.overflow == 'hidden') {
+                document.body.style.overflow = 'visible';
+            }
+            else {
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function logBackdropClickForm() {
+            console.log("Це клік в бекдроп");
+        }
+
+        // код для інфо модалки
+        refsInfo.openModalBtnInfo.addEventListener("click", showModalInfo);
+        refsInfo.closeModalBtnInfo.addEventListener("click", hideModalInfo);
+
+        refsInfo.backdropInfo.addEventListener("click", logBackdropClickInfo);
+
+        function showModalInfo() {
+            refsInfo.backdropInfo.classList.remove("is-hiddenInfo");
+            refsForm.backdropForm.classList.add("is-hiddenForm");
+        }
+        function hideModalInfo() {
+            refsInfo.backdropInfo.classList.add("is-hiddenInfo");
+            document.body.style.overflow = 'visible';
+        }
+
+        function logBackdropClickInfo() {
+            console.log("Це клік в бекдроп");
+        }
+    </script>
 </body>
 
 </html>

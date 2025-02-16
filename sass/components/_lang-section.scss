@@ -1,0 +1,66 @@
+.lang-section {
+    padding: 32px 0 43px;
+    background-image: url('../img/webps/lang-fon-@1x.webp');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../img/webps/lang-fon-@2x.webp');
+    }
+
+    background-size: cover;
+
+    &__list {
+        @include flex(space-between, wrap);
+        margin: 47px auto 0;
+
+        @media screen and (min-width: 768px) {
+            @include size-of-box(748px, auto);
+        }
+
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(1033px, auto);
+        }
+    }
+
+    &__item {
+        background: $lang-item-bgc;
+
+        @media screen and (min-width: 768px) {
+            @include size-of-box(240px, 240px);
+        }
+
+        @media screen and (min-width: 1170px) {
+            @include size-of-box(320px, 240px);
+        }
+
+        padding: 36px 0;
+    }
+
+    &__item:nth-child(n+4) {
+        margin-top: 24px;
+    }
+
+    &__title {
+        @include text-style(400, 32px, 1.25, 'Inter', center);
+        color: $lang-color;
+    }
+
+    &__text {
+        @include text-style(400, 24px, 1, 'Inter', center);
+        color: $lang-color;
+    }
+
+    &__img {
+        display: block;
+        margin: 40px auto 0;
+        width: 100%;
+        fill: $svg-color;
+    }
+
+    &__explanation {
+        @include text-style(400, 24px, 1, 'Inter', center);
+        color: $lang-explanation-color;
+        margin-top: 40px;
+    }
+}

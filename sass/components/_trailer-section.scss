@@ -1,0 +1,24 @@
+.trailer-section {
+    padding: 310px 0;
+    background-image: url('../img/webps/trailer-fon-@1x.webp');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../img/webps/trailer-fon-@2x.webp');
+    }
+
+    background-size: cover;
+}
+
+.trailer-section__but {
+    margin: 0 auto;
+    display: block;
+    @include size-of-box(260px, 80px);
+    background: $but-background-color;
+    border: 3px solid $but-brd-and-color;
+    border-radius: 45px 0px;
+    padding: 0 30px;
+    @include text-style(400, 24px, 1.25, 'Inter', center);
+    color: $but-brd-and-color;
+}
